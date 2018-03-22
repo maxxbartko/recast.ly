@@ -4,12 +4,20 @@ class App extends React.Component {
     super(props);
     this.state = {
       // initialize state of App to keep track of
-        // all videos in list and current video in player
+      // all videos in list and current video in player
     };
   }
 
   render() {
-    // probably render other stuff
+    //// start and render section
+
+    // start and render videoList
+    /// make new videolist with exampleVideoData
+    /// initialize/render
+
+    // start and render search
+    // start and render player
+
 
     return (
       <div>
@@ -23,12 +31,12 @@ class App extends React.Component {
             <div><h5><em>videoPlayer</em> view goes here</h5></div>
           </div>
           <div className="col-md-5">
-            <div><h5><em>videoList</em> view goes here</h5></div>
+            <div><VideoList videos={window.exampleVideoData} /></div>
           </div>
         </div>
       </div>
     );
-  };
+  }
 }
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
